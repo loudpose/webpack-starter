@@ -1,0 +1,35 @@
+.nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	font-size: 3.4rem;
+	padding: 3rem 1.5rem;
+	z-index: 3;
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+	background: #fff;
+}
+.nav__wrapper {
+	display: flex;
+	align-items: center;
+	width: inherit;
+}
+.nav__left {
+	width: 65%;
+	padding-left: 2rem;
+	font-weight: bold;
+}
+.nav__right {
+	width: 35%;
+	padding-right: 2rem;
+
+	& ul {
+		display: flex;
+		gap: 2rem;
+		justify-content: space-around;
+	}
+
+	& ul > li {
+		list-style: none;
+	}
+}

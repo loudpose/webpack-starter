@@ -1,12 +1,22 @@
-// DEMO JOKE APP
-import generateJoke from './generateJoke'
-import './styles/main.scss'
-import laughing from './assets/laughing.svg'
+import Example from "./app/pages/Example-one";
+import "./styles/index.scss";
+class App {
+	constructor() {
+		this.create();
+	}
 
-const laughImg = document.getElementById('laughImg')
-laughImg.src = laughing
+	async create() {
+		this.page = new Example();
+		await this.page.insertHtml();
 
-const jokeBtn = document.getElementById('jokeBtn')
-jokeBtn.addEventListener('click', generateJoke)
+		// Application starts here
+		this.start();
+	}
+	
+	start() {
+		this.page.create();
+		
+	}
+}
 
-generateJoke()
+new App();

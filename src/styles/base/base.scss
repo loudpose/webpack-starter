@@ -1,0 +1,72 @@
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+:root {
+	--data-color-primary: #{$color-black};
+	--data-color-secondary: #{$color-white};
+}
+html {
+	@extend %cover;
+
+	font-family: Helvetica, sans-serif;
+	font-size: calc(100vw / 1920 * 10);
+	line-height: 1;
+
+	color: rgb(var(--data-color-primary));
+	background: rgb(var(--data-color-secondary));
+	// overflow: hidden;
+
+	overscroll-behavior-x: none;
+
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+
+	@include media("<phone") {
+		font-size: calc(100vw / 750 * 15);
+	}
+
+	@include media("<tablet") {
+		overflow: auto;
+		overflow-x: hidden;
+	}
+}
+
+body {
+	overscroll-behavior-x: none;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+	outline: none;
+}
+
+button {
+	background: none;
+	border: none;
+	color: inherit;
+	cursor: pointer;
+	outline: none;
+}
+
+h1,
+h2,
+h3 {
+	font-weight: bold;
+}
+
+img {
+	pointer-events: none;
+}
+
+// .content {
+// 	overflow: hidden;
+// }
+
+// .refresh {
+// 	touch-action: none;
+// }

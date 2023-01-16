@@ -1,17 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%= htmlWebpackPlugin.options.title %></title>
-  </head>
-  <body>
-    <div class="container">
-      <img id="laughImg" alt="" />
-      <h3>Don't Laugh Challenge</h3>
-      <div id="joke" class="joke"></div>
-      <button id="jokeBtn" class="btn">Get Another Joke</button>
-    </div>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title><%= htmlWebpackPlugin.options.title %></title>
+	</head>
+	<body>
+		{%CONTENT%}
+		<main class="home">
+			<section class="home__container" id="about">
+				<div class="home__title">Immersive Experience</div>
+				<div class="home__description">
+					Developer defines the way everything is arranged.
+				</div>
+			</section>
+			<section class="home__services" id="services">
+				<div class="home__services__item" id="services__item__1">
+					<div class="home__services__item__content" id="services__content__1">
+						<img src="" alt="" />
+						<h2>Service One</h2>
+						<p>My service is great! Fast and reliable.</p>
+					</div>
+				</div>
+				<div class="home__services__item" id="services__item__2">
+					<div class="home__services__item__content" id="services__content__2">
+						<img src="" alt="" />
+						<h2>Service Two</h2>
+						<p>My service is great! Fast and reliable.</p>
+					</div>
+				</div>
+				<div class="home__services__item" id="services__item__3">
+					<div class="home__services__item__content" id="services__content__3">
+						<img src="" alt="" />
+						<h2>Service Three</h2>
+						<p>My service is great! Fast and reliable.</p>
+					</div>
+				</div>
+			</section>
+			<section class="home__container" id="contact">
+				<div class="home__title">Immersive Experience</div>
+				<div class="home__description">
+					Developer defines the way everything is arranged.
+				</div>
+			</section>
+		</main>
+	</body>
 </html>
