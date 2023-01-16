@@ -14,13 +14,17 @@ Includes the following features...
 
 ## Usage
 
-Run Dev Server (Port 3000)
+### Development
+
+Starts local server, dynamically serves files.
 
 ```
-  npm run dev
+  npm run start
 ```
 
-## Build for production
+### Build for production
+
+Creates a minified output in the dist folder.
 
 ```
 npm run build
@@ -28,8 +32,9 @@ npm run build
 
 ## Demo App
 
-The demo app is a very simple Joke generator. Replace with your own code and install other packages as needed
+The demo app is a very simple page generator. Replace with your own code and install other packages as needed.
 
 - index.js (main javascript)
+- index.scss (main scss)
 - template.html (template)
-- styles/main.scss (styles)
+- example1.html (dynamically inserted navbar)
